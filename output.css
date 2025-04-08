@@ -7,12 +7,10 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-400: oklch(70.4% 0.191 22.216);
+    --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-red-800: oklch(44.4% 0.177 26.899);
     --color-white: #fff;
     --spacing: 0.25rem;
-    --text-3xl: 1.875rem;
-    --text-3xl--line-height: calc(2.25 / 1.875);
-    --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -169,9 +167,6 @@
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
   }
-  .mt-3 {
-    margin-top: calc(var(--spacing) * 3);
-  }
   .flex {
     display: flex;
   }
@@ -181,8 +176,8 @@
   .table {
     display: table;
   }
-  .w-6 {
-    width: calc(var(--spacing) * 6);
+  .h-screen {
+    height: 100vh;
   }
   .w-7 {
     width: calc(var(--spacing) * 7);
@@ -195,6 +190,9 @@
   }
   .resize {
     resize: both;
+  }
+  .flex-col {
+    flex-direction: column;
   }
   .items-center {
     align-items: center;
@@ -209,19 +207,14 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-red-500 {
+    border-color: var(--color-red-500);
+  }
+  .border-red-800 {
+    border-color: var(--color-red-800);
+  }
   .bg-\[\#111\] {
     background-color: #111;
-  }
-  .bg-red-400 {
-    background-color: var(--color-red-400);
-  }
-  .text-3xl {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
-  }
-  .font-bold {
-    --tw-font-weight: var(--font-weight-bold);
-    font-weight: var(--font-weight-bold);
   }
   .text-white {
     color: var(--color-white);
@@ -264,10 +257,6 @@
   inherits: false;
   initial-value: solid;
 }
-@property --tw-font-weight {
-  syntax: "*";
-  inherits: false;
-}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
@@ -282,7 +271,6 @@
       --tw-skew-x: skewX(0);
       --tw-skew-y: skewY(0);
       --tw-border-style: solid;
-      --tw-font-weight: initial;
       --tw-outline-style: solid;
     }
   }
