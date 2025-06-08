@@ -7,8 +7,38 @@
   <link href="./output.css" rel="stylesheet">
   <link rel="stylesheet" href="./font.css">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <style>
-   
+
+  html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+ .swiper-button-next,
+  .swiper-button-prev {
+    color: #1788ae !important; /* changes arrow icon color */
+    fill: #1788ae !important;  /* for SVGs */
+    stroke: #1788ae !important;
+  }
+    
 
 .hide-scrollbar::-webkit-scrollbar {
   display: none; 
@@ -20,6 +50,7 @@
 </head>
 
 <body class="bg-[#111] text-white font-['Nunito']">
+  <!-- 1 section for Show SVG -->
   <section class="flex flex-col justify-between h-screen ">
     <header class="z-10 flex items-center justify-between w-full max-w-screen-xl px-4 mx-auto mt-4 pointer-events-none">
       <!-- LOGO -->
@@ -249,10 +280,10 @@
     <!-- Latest Button -->
 
     <button id="scrollButton"
-      class="cursor-pointer bg-[#4595eb] py-1 px-3 rounded font-bold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative sm:top-0 -top-[70px] hover:scale-110 ease-in-out duration-100 group self-center mb-13"><a
+      class="cursor-pointer bg-[#4595eb] py-2 px-4 rounded font-bold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative sm:top-[10px] -top-[70px] left-[13px] hover:scale-110 ease-in-out duration-100 group self-center mb-13"><a
         >
 
-        Latest Work
+        My Projects
         <!-- Arrow Logo -->
 
         <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
@@ -260,7 +291,7 @@
           xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
           xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" x="0px" y="0px" width="44"
           height="44" viewBox="0 0 100 100"
-          class="absolute duration-100 ease-in-out rotate-90 -translate-x-1/2 left-1/2 top-7 group-hover:top-8 ">
+          class="absolute duration-100 ease-in-out rotate-90 -translate-x-1/2 left-[50%] top-7 group-hover:top-8 ">
           <g transform="translate(0,-952.36218)">
             <path
               style="text-indent:0;text-transform:none;direction:ltr;block-progression:tb;baseline-shift:baseline;color:#000000;enable-background:accumulate;"
@@ -274,7 +305,7 @@
     </button>
   </section>
 
-
+<!-- 2 Section for Projects -->
   <section class="relative max-w-screen-xl px-4 pb-4 mx-auto sm:pb-16">
     <h2
       class="text-3xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] sm:border-b-2 border-[#1788ae]">
@@ -486,11 +517,54 @@
     <div class="w-[2px] hidden sm:block bg-[#999] absolute top-0 bottom-0 left-1/2 -translate-x-1/2"></div>
   </section>
 
+  <!-- Section Certification -->
 
+
+ <section class="relative max-w-screen-xl px-4 pb-4 bg-[#111] mx-auto sm:pb-16 ">
+
+
+    <h2
+      class="text-3xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] sm:border-2 border-2 border-[#1788ae] rounded-md">
+      Certification</h2>
+
+<div class="md:h-[400px] h-[400px] w-[98%] bg-[#111] relative z-10 mt-6 mx-auto border-[2px]  rounded-2xl p-2">
+  
+
+
+ <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="flex md:flex-row md:text-[20px] text-[15px] flex-col gap-2 justify-center items-center w-[90%] md:p-[10px] p-[40px]">
+          <img src="./assets/images/SAHEB-E-ALAM-Participant-Certificate_page-0001.jpg" alt="" class="md:w-[350px] w-[250px] md:h-[250px] h-[150px] drop-shadow-[0_0px_20px_rgba(255,255,255,0.5)]">
+          <p>SAHEB E-ALAM successfully completed the <b>Introduction to Computers</b> training organized at <b>IIMT University, Meerut</b>, using material from the <b>Spoken Tutorial Project, IIT Bombay</b>. The exam was invigilated by <b>Aishwarya Saxena</b> and conducted remotely by <b>IIT Bombay</b> on <b>May 5th, 2020</b>.
+</p>
+        </div>
+      </div>
+      <div class="swiper-slide"></div>
+
+    </div>
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+
+  </div>
+
+
+
+</div>
+
+
+
+    <div class="w-[2px]    bg-[#999] absolute top-0 bottom-0 left-1/2 -translate-x-1/2"></div>
+
+     
+
+  </section>
+
+<!-- 4 section for show Connect -->
   <section class="max-w-screen-xl px-4 pb-12 mx-auto ">
 
     <h2
-      class="text-3xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] sm:border-2 border-[#1788ae] rounded-md">
+      class="text-3xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] sm:border-2 border-2 border-[#1788ae] rounded-md">
       Let's Connects</h2>
 
       <div class="md:flex flex-row  items-center md:justify-around justify-center">
@@ -633,6 +707,20 @@
     
     window.scrollTo({ top: 0 , behavior: 'smooth' });
   });
-</script>
 
+
+  // ------------------------------------------
+
+  
+  
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </html>
