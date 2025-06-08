@@ -99,8 +99,8 @@ function runMatter() {
         frictionAir: 0.02,
         angle: Math.round(Math.random() * 360),
         render: {
-          fillStyle: "#052a37",
-          strokeStyle: `#1c4a52`,
+          fillStyle: "#404040",
+          strokeStyle: `#606060`,
           lineWidth: 2,
         },
       }
